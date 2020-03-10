@@ -1,0 +1,639 @@
+html,
+body {
+  min-width: 1280px;
+  min-height: 933px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+  font-family: 'PT Sans', "Arial", sans-serif;
+  font-size: 14px; /*стили котые чаще сего встречаются с макете*/
+  line-height: 26px;
+  font-weight: normal;
+  color: #000000; /*белый*/
+  text-transform: uppercase; /*шрифт заглавнйми буквами*/
+    
+  background-color: #f2f2f2;   /*если фонов иображение не загрузится то будет ченый  фоновый цвет*/
+   /*фонове изображние*/
+
+  background-position: top center; /*коорлинаты левоо верхнего угла*/
+  background-repeat: no-repeat; /*фоно не повтояретяс*/
+}
+
+
+.container { /*блок-ценровщик*/
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+
+                    /*ОБЩИЕ СТИЛИ*/
+a{
+    text-decoration: none; /*убраем подчеркивания у  всех ссылок*/
+}
+
+
+img {
+  max-width: 100%; /*если кратинка будет больше ращмера контейнера6 то все арнво уместится в окнтейнер*/
+  height: auto;
+}
+
+
+ul{
+    list-style: none; /*убираем маркеhы у списокво*/
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.button{
+    
+    display: inline-block;/*чтобы кнпоки могли поместиться  водну строку*/
+    padding: 10px 30px;
+    margin-right: 16px;
+    
+    text-align: center;/*горизонтльно ыранвиевание*/
+    font: inherit;/*унаследуем стили шрифтов от родител(body)*/
+    vertical-align: middle; /*веритикальное выравнивание*/
+    text-transform: uppercase;
+    border: none; /*убираем силь кнопок, котрый  по умолчанию*/
+    background-color: #000000;
+    color: #ffffff;
+    outline: none;
+}
+
+
+.button:hover, /*порядок следования должен быть именно таким*/
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+
+.button.disabled,
+.button:disabled{/*для задизейюленной кнопки*/
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
+    
+}
+
+
+.big_logo{
+    position: relative;
+    
+}
+
+
+.header-logo{
+    position: absolute;
+    left: 530px;
+    top: 0px;
+    z-index: 20;/*чтобы кончи у к глого(треугоьник)не скрывался за большой картиной*/
+}
+
+
+
+.wrapper_for_menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+.main-navigation_1,
+.main-navigation_2{
+    display: flex;
+    /*width: 306px;*/
+    background-color: white;
+    align-items: center; /*флекс эементы выранвиваются по центру попрчной оси*/
+    
+}
+
+
+
+
+
+.main-navigation_1 a,
+.main-navigation_2 a{
+    display: block;
+    
+    padding: 15px 70px;/*задаем ПАДДИНГИ!!!!*/
+    vertical-align: middle; /*вертикально выравниваем по центру*/
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+.background_image{
+    position: relative; /*поверх юудем расоплгалать .main_logo и .polygon*/
+    width: 1200px;
+    
+    
+    background-position: 0 0;/*кординаты верзнего левого угла*/
+    
+    background-repeat: no-repeat no-repeat;
+}
+
+
+.background_image_1{
+    height: 800px;
+    background-image: url("../img/background-photo.jpg");
+}
+
+
+.background_image_2{
+    height: 200px;
+    background-image: url("../img/filter-background.jpg");
+}
+
+
+.polygon{
+    position: absolute;
+    
+    width: 1210px;
+    height: 59px;
+    
+    top: 507px; /*растсояние от верхнего края родителя до иконки*/
+    left: -1px;/*растсояние от левого края родителя до иконки*/
+    
+    
+    background-image: url("../img/polygon.png");
+    background-position: 0 0;/*кординаты верзнего левого угла*/
+    background-repeat: no-repeat no-repeat;
+}
+
+
+
+.main_logo{
+    
+    position: absolute;
+    
+    width: 459px;
+    height: 353px;
+    
+    top: 76px; /*растсояние от верхнего края родителя до иконки*/
+    left: 370px;/*растсояние от левого края родителя до иконки*/
+    
+    background-image: url("../img/welcome.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+}
+
+
+
+.about_info{
+    width: 480px;
+    position: absolute;
+    background-color: white;
+    
+    
+    top: 635px; /*растсояние от верхнего края родителя до иконки*/
+    left: 112px;/*растсояние от левого края родителя до иконки*/
+    
+    padding-left: 360px;
+    padding-right: 360px;
+    text-align: center;
+    
+}
+
+
+.info{
+    width: 440px;
+    
+    padding-top: 60px;
+    
+    padding-bottom: 40px;
+    
+    font-size: 21px;
+    font-weight: bold;
+    
+}
+
+
+.five_reason{
+    padding-bottom: 56px;
+    
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    text-align: center;
+    
+}
+
+
+.nastoyashi_gorodok{
+    display: flex;
+    width: 100%;/*ширина тка же как и уродителя*/
+    height: 257px;
+    
+}
+
+
+.blue_block{ /*флекс элемент*/
+    width: 280px;
+    padding-top: 46px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    
+    background-color: #81b3d2;
+    color: white;
+    text-align: center;
+}
+
+
+.blue_block .main_text{
+    padding-bottom: 20px;
+    text-transform: uppercase; /*шрифт заглавнйми буквами*/
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+.blue_block .plain_text{
+    padding-bottom: 10px;
+}
+
+
+.blue_block .image_block{ /*флекс элемент*/
+    width: 810px;
+    height: 256px;
+    background-image: url("../img/feature-picture.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat no-repeat;
+}
+
+
+.features-list{
+    display: flex;
+    background-color: white;
+    line-height: 21px;
+}
+
+
+.feature-item{
+    width: 350px;
+    padding-top: 60px;
+    padding-left:75px;
+    padding-right: 75px;
+    
+    padding-bottom: 50px;
+    text-align: center; /*выранвикваем екс по центру*/
+    
+}
+
+
+.feature-item h3{
+    position: relative; /*относительно этого будем позиционирвоать  иконки ( домика, бургера, сувенира)*/
+    margin: 0;
+    margin-top: 20px;/*место для иконки ( домика, бургера, сувенира)*/
+    font-size: 21px;
+    
+    
+}
+
+
+.feature-item p{
+    color: #333333;
+    margin-bottom: 0; 
+}
+
+
+.feature-item h3::after{
+    content: "";
+
+    position: absolute;
+    
+    left: 50%;
+    bottom: -30px;
+    
+    
+    margin-left: -10px; /*чтобы квадартики встали по центру*/
+    
+    width: 75px; /*размеры самой иконки*/
+    height: 72px;
+   
+   
+}
+
+
+.list2{
+    background-color: #eeeeee;
+}
+
+
+.list2 .item2{
+    width: 208px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+
+
+.info_about_interesting{
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 383px;
+    padding-right: 383px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+
+.info_about_interesting p{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+
+.map{
+    position: relative;/*родитель дял подвала*/
+}
+
+
+.main-footer{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    
+    bottom: 10px;/*нижняя корлината*/
+    background-color: white;
+    opacity: 0.9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    padding-left: 132px;
+}
+
+
+
+.footer-contacts{ /*флекс элемент*/ 
+    width: 223px;/*флекс элементу всегла заадем ширину*/ 
+    
+}
+
+
+
+.footer-contacts p{
+    margin: 0;
+}
+
+
+
+.phone{
+    display: inline-block;
+}
+
+
+
+.footer-social{/*флекс элемент*/
+    width: 145px; /*флекс элементу обхяаельно задаем ширину*/
+    text-align: center; /*центруем содержимое блока*/
+}
+
+
+
+.footer-social ul{ /*флекс контейнер*/
+    display: flex;
+    flex-wrap: wrap;/*перенос флекс  элементов на след строку разшен*/
+    justify-content: space-between;
+    width: 141px;/*флекс элементу обхяаельно задаем ширину*/
+
+
+    padding:0;
+    margin: 0 auto;/*центруем спсиок внутри блока .footer-social*/
+    
+}
+
+
+
+                    /*catalog.html*/
+.for_common_filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/**/
+
+.for_filter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 690px; /*690px*/
+}
+
+
+.first_element{/*флекс элемент*/
+    margin-right: 40px;
+    min-width: 150px;
+    
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+
+
+
+.sort_filter{/*флекс элемент*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 0;
+    
+    min-width: 490px; /*490px*/
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+.sort_item{
+    margin-right: 38px;
+}
+
+
+
+.sort_item:last-child{
+    margin-right: 0;
+}
+
+
+
+/*список отелей*/
+
+.hotels{/*флекс контейнр*/
+    display: flex;
+    flex-direction: column;/*главная ось напралвена сверху вниз*/
+     background-color: white;
+     padding-left: 72px;
+    padding-right: 72px;
+}
+
+
+.hotel_item{/*флекс элемент*/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 1, 1, 0.2);
+    
+    
+}
+
+
+
+.about_info_hotel{ /*флекс эелемент*/
+    display: flex;
+    position: relative;/*относительно этого эмента удем позиционироват кратинку отеля*/
+    flex-direction: column;/*главная ос направлена сверху вниз*/
+    width: 260px;/*260*/
+    justify-content: flex-start;
+    
+    
+    
+    padding-left: 160px; /*метсо для фто* отеля*/
+}
+
+
+.about_info_hotel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+    width: 135px;/*размеры самой картинки*/
+    height: 90px;
+    background-image: url("../img/hotel1.jpg");
+}
+
+
+.name_hotel{/*флекс эелемент*/
+    margin-bottom: 6px;
+    width: 600px;;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+
+
+.wrap_for_name_price{/*флекс эелемент*/
+    margin-bottom: 10px;
+    color: #333333;
+    line-height: 21px;
+    width: 450px; /*ч флекс элемент заадем ширину тобы длинны текст умещался*/
+}
+    
+
+
+.wrap_for_name_price  .type_hotel{
+    display: inline-block;
+    margin-right: 55px;
+    
+}
+
+
+.wrapper_for_button{/*флекс эелемент*/
+    display: flex;
+    width: 100%;/*ширина ткая же, то есть 260px*/
+    justify-content: space-between;
+}
+
+
+.button_catalog{
+    display: block;
+    padding: 0;
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 110px;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+    color: white;
+    line-height: 26px;
+}
+
+
+
+.button_catalog_1{
+    background-color: #81b3d2;
+}
+
+
+.button_catalog_2{
+    background-color: #766357;
+}
+
+
+.part_two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+.rating{
+    display: inline-block; /*чтобы звезы вытсроились в ряд*/
+    float: right; /*чтобы звезды выровняиьс по правому краю*/
+    margin-right: 5px;
+    
+}
+
+
+.rating:first-child{
+    margin-right: 0;
+}
+
+
+.for_rating{
+    border: none;
+    padding: 5px 13px;
+    background-color: #f2f2f2;
+    color: #666666;
+    line-height: 21px;
+}
+
+
