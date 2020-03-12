@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <!--подключаем шрифты -->
     <link href="css/normalize.css" rel="stylesheet">
     <!--для кроссбраузерности-->
@@ -150,8 +150,8 @@
     </main>
 
     <div class="map container">
-        <img src="img/map.jpg" width="1200" height="610" alt="map">
-        <footer class="main-footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17919.480948265216!2d48.65574048955078!3d55.84644055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1584044575753!5m2!1sru!2sru" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <footer class="main-footer main-footer_index">
             <!-- флекс контенйер-->
             <div class="footer-contacts">
                 <!-- флекс элемент-->
@@ -167,18 +167,20 @@
                 </li>
                 <li>
                     <a class="social-button fb" href="#"><span class="visually-hidden">Фейсбук</span>
-                        <img src="img/inst.svg" width="32" height="32" alt="Фейсбукм">
+                        <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбукм">
                     </a>
                 </li>
                 <li>
                     <a class="social-button yotube" href="#"><span class="visually-hidden">Ютуб</span>
-                        <img src="img/tw.svg" width="32" height="32" alt="Ютуб">
+                        <img src="img/youtube-icon.svg" width="20" height="16" alt="Ютуб">
                     </a>
                 </li>
             </ul>
             <p class="footer-copyright">
-                <!-- флекс жлемент-->
-
+                <!-- флекс элемент, котрый сам флекс контейнер-->
+                <span>WEBSITE BY</span><!-- флекс элемент-->
+                <!-- флекс элемент-->
+                <img src="img/logo-htmla.svg" alt="logoahtml" width="115" height="41">
             </p>
         </footer>
     </div>
