@@ -1,301 +1,335 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body><!--  подключили этот класс, с перепределенными стилями-->
+<body>
+    <!--  подключили этот класс, с перепределенными стилями-->
     <header class="container">
-       <div class="big_logo">
-           <a href="index.html"  class="header-logo"> 
+        <div class="big_logo">
+            <a href="index.html" class="header-logo">
                 <img src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
-           </a>
-       </div>
-       <div class="wrapper_for_menu">
-           <ul class="main-navigation_1">
-               <li><a href="info.html">Информация</a></li>
-               <li><a href="info.html">Фото и видео</a></li>
-           </ul>
-           <ul class="main-navigation_1">
-               <li><a href="info.html">Карта штата</a></li>
-               <li><a href="info.html">Гостиницы</a></li>
-           </ul>
-       </div>
-       <section class="big_picture">
-           <div class="background_image background_image_2">
-               <img src="img/image2.jpeg" width="1200" height="217" alt="Седона">
-           </div>
-           <form>
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-              
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-              
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-              
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-              
-               
-               
-              
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-              
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-              
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-              
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               mn nb hcxvdsdsvbvjbm bjkhjf
-               
-              
-              
-               
-               
-           </form>
-       </section>
+            </a>
+        </div>
+        <div class="wrapper_for_menu">
+            <ul class="main-navigation_1">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="info.html">Фото и видео</a></li>
+            </ul>
+            <ul class="main-navigation_1">
+                <li><a href="info.html">Карта штата</a></li>
+                <li><a href="info.html">Гостиницы</a></li>
+            </ul>
+        </div>
+        <section class="big_picture">
+            <div class="background_image background_image_2">
+                <img src="img/image2.jpeg" width="1200" height="217" alt="Седона">
+            </div>
+            <div class="wrap_for_filter_slider">
+                <!-- флекс контейнер-->
+                <form class="filter">
+                    <!-- флекс жлемент-->
+                    <fieldset>
+                        <legend class="">Инфраструктура:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="bassein" checked>
+                                <label for="bassein">Бассейн
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="parking">
+                                <label for="parking">Парковка
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="wifi">
+                                <label for="wifi">WI-FI
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="">Тип жилья:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="hotel">
+                                <label for="hotel">Гостиница
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="motel" checked>
+                                <label for="motel">Мотель
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="apartment" checked>
+                                <label for="apartment">Апартаменты
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+                <div class="filter-range">
+                    <!-- флекс элемент-->
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label class="min-price" for="">От
+                            <input type="text" name="min-price" value="0"><!--  0- значение по умолчанию-->
+                        </label>
+                        <label class="max-price" for="">До
+                            <input type="text" name="max-price" value="3000"><!--  3000- значение по умолчанию-->
+                        </label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
+                </div>
+            </div>
+
+        </section>
     </header>
 
     <main class="container">
-       
-          <div class="for_common_filter"><!-- флекс контейнер-->
-              <div class="for_filter"><!--флекс элемент, котрый сам флекс контейнер-->
-                  <div class="first_element"><!-- флекс элемент-->
-                      Найдено:
-                      <label class="count">
-                          1435
-                      </label>
-                  </div>
-                  <div class="sort_filter"><!-- флекс элемент, кторый сам флекс контейнер-->
-                      <div class="sort_item">
+
+        <div class="for_common_filter">
+            <!-- флекс контейнер-->
+            <div class="for_filter">
+                <!--флекс элемент, котрый сам флекс контейнер-->
+                <div class="first_element">
+                    <!-- флекс элемент-->
+                    Найдено:
+                    <label class="count">
+                        1435
+                    </label>
+                </div>
+                <div class="sort_filter">
+                    <!-- флекс элемент, кторый сам флекс контейнер-->
+                    <div class="sort_item">
                         Сортировка:
-                      </div>
-                      <div class="sort_item">
-                            <a href=""> По цене</a>
-                      </div>
-                      <div class="sort_item">
-                         <a href="">По типу</a>
-                      </div>
-                      <div class="sort_item">
-                         <a href="">По рейтингу</a>
-                      </div>
-                      <div class="sort_item">
-                         <a href="">По рейтингу</a>
-                      </div>
-                 </div>
-              </div>
-              <div class="for_icon"><!-- флекс элемент-->
-                 <a class="sort_up" href="login.html"></a>
-                 <a class="sort_down" href="login.html"></a>    
-              </div>
+                    </div>
+                    <div class="sort_item">
+                        <a href=""> По цене</a>
+                    </div>
+                    <div class="sort_item">
+                        <a href="">По типу</a>
+                    </div>
+                    <div class="sort_item">
+                        <a href="">По рейтингу</a>
+                    </div>
+                    <div class="sort_item">
+                        <a href="">По рейтингу</a>
+                    </div>
+                </div>
+            </div>
+            <div class="for_icon">
+                <!-- флекс элемент-->
+                <a class="sort_up" href="login.html"></a>
+                <a class="sort_down" href="login.html"></a>
+            </div>
         </div>
 
         <!-- флекс контейнр-->
-          <div class="hotels">
-           
-             <div class="hotel_item"><!-- флекс елмент, котрый сам флекс контейнр-->
-              <div class="about_info_hotel"><!-- флекс елмент, котрый сам флекс конетйнер-->
-                      <div class="name_hotel">Amara resort & spa</div>
-                      <div class="wrap_for_name_price">
-                         <span class="type_hotel">Гостиница</span>
-                         <span class="price"> от 4000 Р</span> 
-                      </div>
-                      <div class="wrapper_for_button">
-                          <a href="" class="button_catalog button_catalog_1">Подробнее</a>
-                          <a href="" class="button_catalog button_catalog_2">Забронировать</a>
-                      </div>
-              </div>
-              <div class="part_two"><!-- флекс елмент, ктрый сам флекс контенер-->
-                 <div class="container_for_rating"> <!-- флекс елмент-->
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                 </div>
-                 <div class="for_rating"><!-- флекс елмент-->
-                     Рейтинг:
-                     <label class="estimate">7.9</label>    
-                 </div>
-              </div>
-           </div>  
-         
-           
-       
-           
-           <div class="hotel_item">
-               <div class="about_info_hotel"><!-- флекс елмент-->
-                      <div class="name_hotel">Amara resort & spa Amara resort & spa</div>
-                      <div class="wrap_for_name_price">
-                         <span class="type_hotel">Гостиница</span>
-                         <span class="price"> от 400 Р</span> 
-                      </div>
-                      <div class="wrapper_for_button">
-                          <a href="" class="button_catalog button_catalog_1">Подробнее</a>
-                          <a href="" class="button_catalog button_catalog_2">Забронировать</a>
-                      </div>
-              </div>
-              <div class="part_two"><!-- флекс елмент-->
-                 <div class="container_for_rating"> 
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                 </div>
-                 <div class="for_rating">
-                     Рейтинг:
-                     <label class="estimate">7.9</label>    
-                 </div>
-              </div>
-           </div>
-           
-           <div class="hotel_item">
-               <div class="about_info_hotel"><!-- флекс елмент-->
-                      <div class="name_hotel">Amara</div>
-                      <div class="wrap_for_name_price">
-                         <span class="type_hotel">Гостиница</span>
-                         <span class="price"> от 1000 Р</span> 
-                      </div>
-                      <div class="wrapper_for_button">
-                          <a href="" class="button_catalog button_catalog_1">Подробнее</a>
-                          <a href="" class="button_catalog button_catalog_2">Забронировать</a>
-                      </div>
-              </div>
-              <div class="part_two"><!-- флекс елмент-->
-                 <div class="container_for_rating"> 
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                 </div>
-                 <div class="for_rating">
-                     Рейтинг:
-                     <label class="estimate">7.9</label>    
-                 </div>
-              </div>
-            </div>
-            
+        <div class="hotels">
+
             <div class="hotel_item">
-               <div class="about_info_hotel"><!-- флекс елмент-->
-                      <div class="name_hotel">Amara</div>
-                      <div class="wrap_for_name_price">
-                         <span class="type_hotel">Гостиница</span>
-                         <span class="price"> от 1000 Р</span> 
-                      </div>
-                      <div class="wrapper_for_button">
-                          <a href="" class="button_catalog button_catalog_1">Подробнее</a>
-                          <a href="" class="button_catalog button_catalog_2">Забронировать</a>
-                      </div>
-              </div>
-              <div class="part_two"><!-- флекс елмент-->
-                 <div class="container_for_rating"> 
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                 </div>
-                 <div class="for_rating">
-                     Рейтинг:
-                     <label class="estimate">7.9</label>    
-                 </div>
-              </div>
+                <!-- флекс елмент, котрый сам флекс контейнр-->
+                <div class="about_info_hotel">
+                    <!-- флекс елмент, котрый сам флекс конетйнер-->
+                    <div class="name_hotel">Amara resort & spa</div>
+                    <div class="wrap_for_name_price">
+                        <span class="type_hotel">Гостиница</span>
+                        <span class="price"> от 4000 Р</span>
+                    </div>
+                    <div class="wrapper_for_button">
+                        <a href="" class="button_catalog button_catalog_1">Подробнее</a>
+                        <a href="" class="button_catalog button_catalog_2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="part_two">
+                    <!-- флекс елмент, ктрый сам флекс контенер-->
+                    <div class="container_for_rating">
+                        <!-- флекс елмент-->
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                    </div>
+                    <div class="for_rating">
+                        <!-- флекс елмент-->
+                        Рейтинг:
+                        <label class="estimate">7.9</label>
+                    </div>
+                </div>
             </div>
-            
+
+
+
+
             <div class="hotel_item">
-               <div class="about_info_hotel"><!-- флекс елмент-->
-                      <div class="name_hotel">Amara</div>
-                      <div class="wrap_for_name_price">
-                         <span class="type_hotel">Гостиница</span>
-                         <span class="price"> от 1000 Р</span> 
-                      </div>
-                      <div class="wrapper_for_button">
-                          <a href="" class="button_catalog button_catalog_1">Подробнее</a>
-                          <a href="" class="button_catalog button_catalog_2">Забронировать</a>
-                      </div>
-              </div>
-              <div class="part_two"><!-- флекс елмент-->
-                 <div class="container_for_rating"> 
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                     <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
-                 </div>
-                 <div class="for_rating">
-                     Рейтинг:
-                     <label class="estimate">7.9</label>    
-                 </div>
-              </div>
+                <div class="about_info_hotel">
+                    <!-- флекс елмент-->
+                    <div class="name_hotel">Amara resort & spa Amara resort & spa</div>
+                    <div class="wrap_for_name_price">
+                        <span class="type_hotel">Гостиница</span>
+                        <span class="price"> от 400 Р</span>
+                    </div>
+                    <div class="wrapper_for_button">
+                        <a href="" class="button_catalog button_catalog_1">Подробнее</a>
+                        <a href="" class="button_catalog button_catalog_2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="part_two">
+                    <!-- флекс елмент-->
+                    <div class="container_for_rating">
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                    </div>
+                    <div class="for_rating">
+                        Рейтинг:
+                        <label class="estimate">7.9</label>
+                    </div>
+                </div>
             </div>
-            
-          </div>
-        
-       
-                      
-                    
-                         
-                
+
+            <div class="hotel_item">
+                <div class="about_info_hotel">
+                    <!-- флекс елмент-->
+                    <div class="name_hotel">Amara</div>
+                    <div class="wrap_for_name_price">
+                        <span class="type_hotel">Гостиница</span>
+                        <span class="price"> от 1000 Р</span>
+                    </div>
+                    <div class="wrapper_for_button">
+                        <a href="" class="button_catalog button_catalog_1">Подробнее</a>
+                        <a href="" class="button_catalog button_catalog_2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="part_two">
+                    <!-- флекс елмент-->
+                    <div class="container_for_rating">
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                    </div>
+                    <div class="for_rating">
+                        Рейтинг:
+                        <label class="estimate">7.9</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_item">
+                <div class="about_info_hotel">
+                    <!-- флекс елмент-->
+                    <div class="name_hotel">Amara</div>
+                    <div class="wrap_for_name_price">
+                        <span class="type_hotel">Гостиница</span>
+                        <span class="price"> от 1000 Р</span>
+                    </div>
+                    <div class="wrapper_for_button">
+                        <a href="" class="button_catalog button_catalog_1">Подробнее</a>
+                        <a href="" class="button_catalog button_catalog_2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="part_two">
+                    <!-- флекс елмент-->
+                    <div class="container_for_rating">
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                    </div>
+                    <div class="for_rating">
+                        Рейтинг:
+                        <label class="estimate">7.9</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_item">
+                <div class="about_info_hotel">
+                    <!-- флекс елмент-->
+                    <div class="name_hotel">Amara</div>
+                    <div class="wrap_for_name_price">
+                        <span class="type_hotel">Гостиница</span>
+                        <span class="price"> от 1000 Р</span>
+                    </div>
+                    <div class="wrapper_for_button">
+                        <a href="" class="button_catalog button_catalog_1">Подробнее</a>
+                        <a href="" class="button_catalog button_catalog_2">Забронировать</a>
+                    </div>
+                </div>
+                <div class="part_two">
+                    <!-- флекс елмент-->
+                    <div class="container_for_rating">
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                        <div class="rating"><img src="img/star.svg" width="18" height="17" alt="star"></div>
+                    </div>
+                    <div class="for_rating">
+                        Рейтинг:
+                        <label class="estimate">7.9</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
     </main>
 
     <footer class="main-footer container">
-            <!-- флекс контенйер-->
-            <div class="footer-contacts">
-                <!-- флекс элемент-->
-                <p>#visitSEDONA</p>
-                <p class="phone">Тел: +7(495) 666-02-66</p>
-            </div>
-            <ul class="footer-social">
-                <li>
-                    <a class="social-button tw" href="#">
-                        <span class="visually-hidden">Твиттер</span>
-                        <img src="img/tw-icon.svg" width="17" height="15" alt="Твиттер">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button fb" href="#"><span class="visually-hidden">Фейсбук</span>
-                        <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбукм">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button yotube" href="#"><span class="visually-hidden">Ютуб</span>
-                        <img src="img/youtube-icon.svg" width="20" height="16" alt="Ютуб">
-                    </a>
-                </li>
-            </ul>
-            <p class="footer-copyright">
-                <!-- флекс элемент, котрый сам флекс контейнер-->
-                <span>WEBSITE BY</span><!-- флекс элемент-->
-                <!-- флекс элемент-->
-                <img src="img/logo-htmla.svg" alt="logoahtml" width="115" height="41">
-            </p>
-        </footer>
+        <!-- флекс контенйер-->
+        <div class="footer-contacts">
+            <!-- флекс элемент-->
+            <p>#visitSEDONA</p>
+            <p class="phone">Тел: +7(495) 666-02-66</p>
+        </div>
+        <ul class="footer-social">
+            <li>
+                <a class="social-button tw" href="#">
+                    <span class="visually-hidden">Твиттер</span>
+                    <img src="img/tw-icon.svg" width="17" height="15" alt="Твиттер">
+                </a>
+            </li>
+            <li>
+                <a class="social-button fb" href="#"><span class="visually-hidden">Фейсбук</span>
+                    <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбукм">
+                </a>
+            </li>
+            <li>
+                <a class="social-button yotube" href="#"><span class="visually-hidden">Ютуб</span>
+                    <img src="img/youtube-icon.svg" width="20" height="16" alt="Ютуб">
+                </a>
+            </li>
+        </ul>
+        <p class="footer-copyright">
+            <!-- флекс элемент, котрый сам флекс контейнер-->
+            <span>WEBSITE BY</span><!-- флекс элемент-->
+            <!-- флекс элемент-->
+            <img src="img/logo-htmla.svg" alt="logoahtml" width="115" height="41">
+        </p>
+    </footer>
 
     <!--<section><!-- Мод окно (попап Войти) 
       <h2>Личный кабинет</h2>
@@ -304,5 +338,6 @@
       <button type="button">Закрыть</button>
     </section>-->
 
-  </body>
+</body>
+
 </html>
